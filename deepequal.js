@@ -8,17 +8,17 @@ function deep_equals(obj1, obj2)
 		}
 
 		//recursively check each of the properties of the objects
-		for (var p in obj1) {
+		for (var prop in obj1) {
 
-			if(obj2.hasOwnProperty(p)) {
-				if(!deep_equals(obj1[p], obj2[p])) {
+			if(obj2.hasOwnProperty(prop)) {
+				if(!deep_equals(obj1[prop], obj2[prop])) {
 					return false;
 				}
 			} else {
 				return false;
 			}
 		}
-		//all of the properties match
+		//all of the properties match	
 		return true;
 
 	} else if (obj1 !== obj2) {
