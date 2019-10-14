@@ -30,7 +30,7 @@ function deep_equals(obj1, obj2)
 	}
 }
 
-// Your code here.
+// Your code here (Src: http://eloquentjavascript.net/04_data.html#h_IJBU+aXOIC)
 
 var obj = {here: {is: "an"}, object: 2};
 console.log(deep_equals(obj, obj));
